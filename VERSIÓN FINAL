@@ -1,0 +1,551 @@
+print("Aprendiendo Ciencia de la Computación - Programación en Python")
+print("CONTENIDO")
+print("1. VARIABLES")
+print("2. ESTRUCTURAS DE CONTROL SELECTIVAS")
+print("3. ESTRUCTURAS DE CONTROL REPETITIVAS")
+print("4. LISTAS")
+print("5. FUNCIONES")
+print("6. STRINGS")
+print(" ")
+print("Escoja su opción: ")
+respuesta = input()
+ 
+BLOQUE PRINCIPAL DEL PROGRAMA
+ 
+#MAIN
+print("Hola ¿Cuál es tu nombre?")
+nombre = input()
+print("Bienvenido "+nombre)
+print("En la siguiente guía resolveremos algunas preguntas acerca de programación")
+print("")
+print("¿Quieres empezar? Si o No ")
+quieresempezar=input()
+if quieresempezar=="si" or "Si":
+   print("¡Perfecto! Empecemos")
+else:
+   print("¿Seguro?")
+print()
+print("")
+print("A continuación resolveremos unas preguntas acerca de variables y sus usos en la programación:")
+print("¿Listo? ")
+noimportaloquerespondanolegohastaaquiporgusto=input()
+print()
+
+PROBLEMAS DE VARIABLES 
+#1
+def problemavariables1():
+    print("¿Sabes como se digitalizan numero entero y un decimal en programación? Escribe usando minúsculas.")
+    print("Escoge entre estas opciones: int y float o float e int")
+    input()
+    print("¿Te crees capaz de aplicarlo en Python? (Si o No)")
+    a=input()
+    if a=="si" or "Si":
+        print("¿Cómo se representan en Python estos tipos de datos o variables, enteros y decimales?")
+        print("Tipea tu respuesta anterior.")
+        respuesta=input()
+        if respuesta=="int y float":
+            print("¡Correcto!")
+        else:
+            print("Casi, pero no. Estos, se representan como int y float")
+            print("No, pero casi.")
+            print("Bueno, la función de enteros y decimales en Python se denotan como int y float, respectivamente ")
+            print("Una vez que comprendiste esto, entonces...")
+            print()
+#2          
+ESTE ES EL JUEGO DE VARIABLES, NO DEBE AGREGARSE DENTRO DE UNA FUNCION. ES DEMASIADO COMPLEJO HACERLO. EL ALGORITMO FUNCIONA POR SU CUENTA. AL PROFESOR LE GUSTO (ME LO DIJO) – ASI QUE LO MANTENGO. AL FINAL DE ESTE EJERCICIO AGREGAR LO QUE SERIA def problemavariables3() para que el algoritmo corra con normalidad.
+
+import time
+print("Ahora que te hemos introducido algunas terminologias sobre datos en Python...")
+print("¡Practiquemos con el juego del ahorcado! Se te dara una situación y tu debes poner tu respuesta")
+print("Debes poner que clase de variable debes usar: integer (int), float (float), boolean (bool) o string (str).")
+time.sleep(2)
+print("Recuerda que:")
+print("*integer (int) es para numeros enteros")
+print("*float (float) es para numeros decimales")
+print("*boolean (bool) es para Verdadero y/o Falso")
+print("*string (str) es para todo tipo de datos compuesto por letras o palabras")
+print("Como respuesta escribir lo que se encuentra entre paréntesis.")
+time.sleep(1.5)
+palabra1 = "float"
+palabraingresada1 = ""
+vidas = 3
+print("Si se quiere digitalizar el valor de pi (3,1416) en Python, ¿cuál es la variable a emplear?")
+
+while vidas > 0:
+ fallas = 0
+ for letra in palabra1:
+   if letra in palabraingresada1:
+     print(letra,end="")
+   else:
+     print("*", end="")
+     fallas+=1
+ if fallas==0:
+     print("¡Felicidades! Poco a poco vamos aprendiendo a programar en Python!")
+     print("Sigamos aprendiendo con Python")
+     break
+ tuletra=str(input("Introduce una letra: "))
+ palabraingresada1+=tuletra
+ if tuletra not in palabra1:
+   vidas-=1
+   print("¡No!, sigue intentando ;)")
+   print("Te quedan ", +vidas," vidas.")
+   if vidas==0:
+       print("Lo siento amigo, no lograste lo esperado. ¡Sigue adelante!")
+else:
+ print("Continuemos con lo aprendido en Python")
+ 
+ 
+#3
+ 
+
+def problemavariables3():
+    import time
+    print("Ya debes saber lo que es un algoritmo y como se representa dentro de lo que es variables en Python.")
+    time.sleep(0.5)
+    print("Un algoritmo se define por ser finito, definido y preciso")
+    time.sleep(1)
+    print("")
+    print("________________________________________________________________________________")
+    print("Ahora que ya sabes esto, ¡resolvamos un ejercicio!")
+    print("Te daremos un dato y tu debes escribir que tipo de dato usarias para presentarlo. ¿Listo? ¡Empecemos!")
+    print("Escoge y escribe, segun el caso: int - float - bool - str")
+    print("3.24")
+    respuesta=input()
+    if respuesta == "float":
+        print("Correcto.")
+    else:
+        print("No amig@, no acertaste, pero continuemos")
+ 
+ 
+#4
+ 
+def problemavariables4():
+    print("Escoge entre: int - float - bool - str")
+    print("Verdadero")
+    respuestaa=input()
+    if respuestaa == "bool" or "string" or "str":
+        print("Correcto.")
+    else:
+        print("No amig@, no acertaste, pero continuemos")
+ 
+#5
+def problemavariables5():
+    print("Si queremos crear un programa que te sume dos números, ¿cómo se haría?")
+    print("Te pondremos las variables en orden, ¡y tú debes ordenarlas!")
+    print("0. x = 5")
+    print("1. ''La suma de los números es:'', suma")
+    print("2. y = 6")
+    print("3. suma = x + y")
+    print("!Ordenalos¡ Escoge entre las siguientes alternativas: (solo poner las letras)")
+    print("a. 3-2-1-0")
+    print("b. 2-0-1-3")
+    print("c. 0-2-3-1")
+    print("d. 2-0-3-1")
+    print("_________________________________________________________")
+    print("Escriba su respuesta:")
+    respuesta1 = str(input())
+    if respuesta1 == "c." or "c" or "d." or "d":
+        print("¡Correcto!")
+    else:
+        print("No amig@, lo lamento, pero fallaste.")
+
+PROBLEMAS DE IF: 
+#MAIN
+ 
+print("Ya hemos visto y practicado el uso de variables en Python. Veamos algo más complejo.")
+print("¿Sabes lo que es una estructura de control selectiva? Pues, lo sabrás. Esta parte de la programación, se basa en condiciones. ¡Comencemos!")
+print("A continuación resolveremos unas preguntas acerca de if y sus usos:")
+print("¿Listo? ")
+noimportaloquerespondanolegohastaaquiporgusto = input()
+print()
+problemaif1()
+problemaif2()
+problemaif3()
+problemaif4()
+problemaif5()
+problemaif6()
+print()
+ 
+#1, esto es lo que avanzamos la vez pasada, Figo lo programo creo.
+def problemaif1():
+    print("Si quisiéramos hacer un código que nos indique si una variable es mayor o menor que 100, ¿qué tipo de función predeterminada deberíamos usar?")
+    print("Escoge entre: if, for, while")
+    respuesta=input()
+    if respuesta == "if":
+        print("¡Correcto!")
+        print()
+    else:
+        print("No, pero casi. Te daré una pista: el programa que deseas hacer se basa en una condición...")
+        print("Entonces...")
+        print()
+        problemaif1()
+#2, 
+
+def problemaif2():
+    print("¿Cuántas funciones de else se pueden ejecutar como máximo en una misma instrucción? ")
+    print("Escoge entre: 0, 1, 2 o 3")
+    respuesta=input()
+    if respuesta=="1":
+        print("¡Correcto!")
+        print("")
+    else:
+        print("No, pero estas cerca. Ten en cuenta que else se aplica solo cuando ninguna condición se ha cumplido...")
+        print("Entonces...")
+        print()
+        problemaif2()
+#3
+
+def problemaif3():
+    print("¿Si quisiera usar más de una condición en un programa que función utilizamos:")
+    print("Escoge entre: if, elif, else o no existe")
+    respuesta=input()
+    if respuesta=="elif":
+        print("Correcto")
+    else:
+        print("Incorrecto. Una pista: la función se denota a una fusión de las variables if y else... ")
+        print("Entonces...")
+        print()
+        problemaif3()
+#4
+def problemaif4():
+    print("Con lo que sabes, analiza la siguiente estructura.")
+    print("**********")
+    print("edad = int(input(¿Cuántos años tiene?)")
+    print("if edad < 18:")
+    print("___print(''Es usted menor de edad'')")
+    print("else:")
+    print("___print(''Es usted mayor de edad'')")
+    print("")
+    print("¿Para qué crees que sirva el programa?. Lee y pon si concuerdas escribiendo Si o No.: ")
+    print("Si tienes una edad menor a 18, te pondrá que eres menor, pero sino es así, te pondrá que eres mayor")
+    print("")
+    print("¿Estás de acuerdo?")
+    respuestaif = str(input())
+    if respuesta1 == "Si." or "Si" or "si":
+        print("¡Correcto!, como veras, la función if ejecuta unas instrucciones basadas en una condición. En este caso, la condición era para determinar tu edad. Menor o mayor a 18")
+        print("Interesante, ¿no? ")
+    else:
+        print("Vuelve a analizar la estructura.")
+ 
+#5, revisar, porque al responder la pregunta, se responde lo que NO debería responderse.
+def problemaif5():
+    import time
+    print("Ahora analicemos la función de elif.")
+    print("**********")
+    print("Repasemos algo de teoría primero. Un bloque anidado con elif se vería así…")
+    time.sleep(1)
+    print("if condición_1:")
+    print("___bloque 1)")
+    print("elif condición_2:")
+    print("___bloque 2)")
+    print("else:")
+    print("___bloque 3)")
+    print("Es decir, si se cumple la condición 1 se ejecuta el bloque 1:")
+    print("Si no se cumple la condición 1, pero si la 2, se ejecuta el bloque 2)")
+    print("Si no se cumple ninguna de las dos, se ejecuta el bloque 3.)")
+    print("")
+    time.sleep(2)
+    print("¿Para qué crees que sirva el siguiente programa?. Lee y pon si concuerdas escribiendo Si o No.: ")
+    print("edad = int(input(¿Cuántos años tienes? ")
+    print("if edad<0:")
+    print("___print(''No se puede tener una edad negativa'')")
+    print("elif edad>=0 and edad<18:")
+    print("___print(''Es usted menor de edad'')")
+    print("else:")
+    print("___print(''Es usted mayor de edad'')")
+    print("")
+    print("¿Si se cumple el bloque 2, significa que la edad ingresada es SOLO mayor a 0?")
+    respuestaif = str(input())
+    if respuesta1 == "No." or "No" or "no":
+        print("¡Correcto!, como veras, si se ingresa un número mayor a 0, que se encuentra antes que el 18,")
+        print("quiere decir que la edad ingresada se encuentra en el rango de 0 a 18.")
+    else:
+        print("Vuelve a analizar la estructura.")
+
+#6, revisar el problema. No corre de la manera que uno espera. 
+ 
+def problemaif6():
+    print("El siguiente programa tiene como objetivo escribir tres números y determinar el menor de ellos.")
+    print("Después de haber ingresado los tres números, ¿crees que está bien programado el programa?")
+    print(" ")
+    print("if x<y and x<z:")
+    print("___print(''El minimo valor es: '', x)")
+    print("else:")
+    print("___if y<z and y<x:")
+    print("______print(''El minimo valor es: '', y)")
+    print("else:")
+    print("___if z<x and z<y:")
+    print("______print(''El minimo valor es'', z)")
+    respuestaelif = str(input())
+    if respuestaelif=="Si." or "Si" or "si":
+        print("Correcto.")
+    else:
+        print("Vuelve a analizar la estructura.")
+ 
+#7, no es una función, es la segunda parte del problema.
+print("*********************************************")
+print("¿Crees que la estructura se pueda reformular con una condición de elif? Pon Si o No")
+respuestaelif2 = input()
+if respuestaelif2=="Si." or "Si" or "si":
+    print("Correcto.")
+else:
+    print("Te equivocas. ¡Sí se puede!")
+ 
+#8
+ 
+print("*********************************************")
+print("Basándote en el programa anterior contesta Si o No si es que el programa, ahora con elif añadido, cumple el mismo objetivo.")
+print(" ")
+print("Después de haber introducido los 3 números, el programa se formularia de la siguiente manera… ¿Si o No?")
+print("if x<y and x<z:")
+print("___print(''El mínimo valor es: '', x")
+print("elif y<z and y<x:")
+print("___print(''El mínimo valor es: '', y")
+print("else:")
+print("___if z<x and z<y:")
+print("______print(''El mínimo valor es''), z")
+print("*********************************************")
+print("Escribe tu respuesta (Si o No) ¿Cumple la misma función que el programa anterior?")
+print("Después de haber introducido los 3 números, el programa se formularia de la siguiente manera… ¿Si o No?")
+respuestaelif3 = input()
+if respuestaelif3=="Si." or "Si" or "si":
+    print("Correcto.")
+else:
+    print("Te equivocas. ¡Se cumple la misma función!")
+ 
+ 
+#While y for
+Es el código de la vez pasada, no vi una manera de hacer más ejercicios, me parece que combinan teoría y ejercicios de manera perfecta. 
+ 
+def problemawhilefor1():
+   print("¿Cuál de las siguientes estructuras es una repetitiva para ti?:")
+   print("Escoger entre: if, str, while y print")
+   respuesta=input()
+   if respuesta=="while":
+       print("¡Muy bien!")
+       print()
+   else:
+       print("No le atinaste. Ten en cuenta que una estructura repetitiva debe obedecer cierta condición.")
+       print("Mientras esa condición se cumpla las funciones dentro de estas estructuras repetitivas correrán.")
+       print("¡Ahora inténtalo de nuevo!")
+       print()
+       problemawhilefor1()
+
+def problemawhilefor2():
+   print("x=int(input())")
+   print("k=1")
+   print("while k<x:")
+   print("     print('Hola mundo')")
+   print("     k+1")
+   print("Si se ingresa 4 como valor de x")
+   print()
+   print("¿El programa imprimirá 4 veces 'Hola mundo'?")
+   print("¿Qué crees? si o no")
+   respuesta=input()
+   if respuesta=="no":
+       print("¡Correcto!")
+   else:
+       print("Incorrecto, te recomiendo que revises tu condición; específicamente tu signo, para que se imprima 4, el símbolo debería ser menor o menor igual.")
+       print("Entonces...")
+       print()
+       problemawhilefor2()
+
+def problemawhilefor3():
+   print("A continuación verás un código en Python.")
+   print()
+   print("for i in range (1,10,2)")
+   print("     print(i)")
+   print()
+   print("¿El print del programa mostrará '2, 4, 6, 8, 10' ?")
+   print("Escoge entre: si o no ")
+   respuesta=input()
+   if respuesta=="no":
+       print("¡Correcto!")
+   else:
+       print("Incorrecto. Recuerda que el primer número dentro del rango representa el inicio, el segundo representa el final y el tercero representa el intervalo entre esos números")
+       print("Sabiendo esto, entonces..")
+       print("")
+       problemawhilefor3()
+ 
+ 
+print("Ahora responderemos algunas preguntas acerca de estructuras de control repetitivas: ")
+print("¿Listo? ")
+noimportaloquerespondanolegohastaaquiporgusto=input()
+print()
+problemawhilefor1()
+print("Las estructuras repetitivas más conocidas son while y for; ambas funcionan si se cumplen sus condiciones.")
+print()
+print("La función while puede ser usada para muchos fines, en este caso la veremos funcionando con un contador")
+print()
+print("El contador trabajará con la condición de tu while para repetir[ ] cuantas veces el valor de tu contador")
+print("cumplirá con la condición. Puede ser un poco confuso, lo sé, pero pronto se te hará todo más fácil.")
+print()
+problemawhilefor2()
+print()
+ 
+ 
+#LISTAS:
+Desarrollar tema introductorio a Listas.
+ 
+ 
+DESARROLLAR EL PROGRAMA:
+La idea de este único programa es el de presentar los casos bajo el orden a y b, y luego presentar los proyectos. El usuario debe relacionarlos es decir. 
+Le pondremos las situaciones, y luego pondremos los códigos. El usuario debe escribir como es la relación. Si 2b o 1b o 2a o 1a:
+ 
+RESPUESTAS: 2a; 1b
+ 
+*El objetivo del siguiente problema es el de: 
+a) Elaborar un programa que reciba como input 2 números enteros. Estos dos números representan un rango, donde el primero es la posición inicial del rango y el segundo es la posición final del rango. El programa imprimirá los elementos que se encuentran fuera del rango. 
+ 
+2)
+ 
+L = [11, 12, 13, 14, 15,16,17,18,19,20]
+valorInicial = int(input())
+valorFinal   = int(input())
+for i in range(0,valorInicial-1):
+    print (L[i],end= " ")
+for i in range(valorFinal,len(L)):
+    print (L[i],end= " ")
+ 
+ 
+b) El usuario ingresa un número entero positivo N. Dependiendo del valor ingresado, se solicita a continuación el ingreso de N números enteros. El programa almacena uno a uno los elementos en una lista. Al finalizar, imprime en una línea la lista llena y a continuación en la siguiente línea, la lista ordenada de mayor a menor.
+ 
+ 
+1)
+ 
+N = int(input())
+L=[]
+for i in range(N):
+    elemento = int(input())
+    L.append(elemento)
+print(L)
+L.sort()
+L.reverse()
+print(L)
+ 
+ 
+#FUNCIONES
+#1
+def problemafunciones1():
+   print("¿Sabes que estructurar en Python nos permite juntar una secuencia de código para agilizar el proceso de codificación? ")
+   print("Escoger entre: repetitivas, variables, funciones,")
+   respuesta=input()
+   if respuesta=="funciones":
+       print("¡Respuesta correcta!")
+   else:
+       print("Casi, pero no. Míralo como si te pidieran que empaquetes un código para que desarrolle un tarea en específico.")
+       print("Con esa ayuda, entonces...")
+       print()
+       problemafunciones1()
+ 
+print("A continuación veremos unas preguntas acerca de funciones")
+print("¿Listo? ")
+noimportaloquerespondanolegohastaaquiporgusto=input()
+print()
+problemafunciones1()
+print()
+ 
+#2
+print("Ya sabes cómo analizar un programa en Python, por lo tanto, te presentaremos un nuevo ejercicio, pero con funciones.")
+print("El presente programa te construye una función que tiene como único objetivo determinar la suma de 3 números.")
+print("La variable return se encarga de que una vez realizada la programación, el programa ejecute todo el código pero ahora con la función resuelta.")
+print("Es decir, al finalizar el programa, lo que te regresara es la respuesta que se formuló con la función inicial. Interesante, ¿no?")
+print("________________________________________________")
+print("________________________________________________")
+print("El siguiente programa tiene como objetivo definir una función que calcule la suma de tres números")
+print(", una vez concluido ello, botara como resultado la suma de los 3 números ingresados.")
+print("def calcula_SUMA(x, y, z):")
+print("___ resultado= (x+y+z)")
+print("___return resultado)")
+print("a=3")
+print("b=5")
+print("c=9")
+print("suma = calcula_SUMA(3, 5, 9)")
+print("print(f''La suma de {3}, {5} y {9} es: {suma}'')")
+print("print(''Programa Terminado)''")
+ 
+#3
+Hacer ejercicio. Pedir al usuario que organice el siguiente ejercicio, el cual estará en desorden. La función del código es la de contar vocales. 
+Desordenar el ejercicio y ponerle un orden a las alternativas.
+ 
+def contar_vocales(palabra):
+    vocales = 0
+    for c in palabra:
+        if c in ["a", "e", "i", "o", "u"]:
+            vocales = vocales + 1
+    return vocales
+print(contar_vocales("palabra"))
+ 
+#4
+Hacer lo mismo con este ejercicio. 
+El código aquí sirve para calcular la suma de los dígitos de un número que tiene MAXIMO 5 dígitos. 
+ 
+def CalculaSuma(x):
+    suma=0
+    if len(x)<=5:
+        for i in x:
+            i=int(i)
+            suma=suma+i
+    return suma
+numero=input()
+print(CalculaSuma(numero))
+ 
+ 
+ 
+#STRINGS
+def problemastring1():
+   print("¿Recuerdas que hay un tipo de variable llamado string?")
+   print("¿Estás familiarizado con lo que es un emoji? Escribe Si o No")
+   respuesta3=input()
+   if respuesta3== "si" or "Si":
+       print("¡Estupendo!")
+       print("¡¿Sabías que estos emojis se encuentran compuestos por caracteres?!")
+       print()
+   else:
+       print("Los emojis se encuentra en todas las redes sociales y están compuestos por caracteres, ¡y tú puedes tipearlos!.")
+       print()
+   print("En la programación los caracteres se denotan bajo el tipo de datos str que vienen de string que significa una cadena de caracteres ya sean palabras o números")
+   print()
+
+
+
+print("Ahora veremos algo de teoría de strings.")
+problemastring1()
+print()
+ 
+#2
+Explicar lo que hace este código… 
+refran = "No por mucho madrugar se amanece más temprano"
+for i in refran:
+    print(i)
+ 
+Luego, pedir al usuario que analice este código, pero nosotros le explicamos lo que hace…
+
+
+refran = "No por mucho madrugar se amanece más temprano"
+for i in range(len(refran)-1,3,-1):
+    print(refran[i])
+
+
+Por último, pedirle al usuario que analice este código, y le ponemos 3 alternativas sobre para que funcione. El usuario tiene que escoger una de las alternativas. 1-2-3. Y ahí termina todo el programa.
+
+refran = "No por mucho madrugar se amanece más temprano"
+letras = 0
+for i in refran:
+    if i !=" ":
+        letras = letras +1
+print (f"Total de letras : {letras}")
+ 
+ 
+#FINAL
+Para el hito 2 se va a integrar lo que es archivo, ¿recuerdan?, estaba pensando poner esta parte final como uno, ósea escribir un texto con la parte final del programa e importar el archivo de la carpeta. Para que eso sea lo último del programa. ¿Que dicen?
+def final():
+    print("Y con esto finalizamos el mini curso de programación básica en Python")
+    print("------------------------------------------------------------------------------------")
+    print("Participación de:")
+    print("-Figo García")
+    print("-Daniel Espinoza")
+    print("-Angel Gonzalez")
+    print()
+    print()
+    print("Gracias por participar...")
