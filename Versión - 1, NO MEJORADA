@@ -1,0 +1,276 @@
+def problemavariables1():
+    print("¿Sabes como se digitalizan numero entero y un decimal en programación? Escribe usando minúsculas.")
+    print("Escoge entre estas opciones: int y float o float e int")
+    input()
+    print("¿Te crees capaz de aplicarlo en Python?")
+    a=input()
+    if a=="si" or "Si":
+        print("¿Cómo se representan en Python estos tipos de datos o variables, enteros y decimales?")
+        print("Tipea tu respuesta anterior.")
+        respuesta=input()
+        if respuesta=="int y float":
+            print("¡Correcto!")
+        else:
+            print("Casi, pero no. Estos, se representan como int y float")
+            print("No, pero casi.")
+            print("Bueno, la función de enteros y decimales en Python se denotan como int y float, respectivamente ")
+            print("Una vez que comprendiste esto, entonces...")
+            print()
+            problemavariables1()
+    else:
+        print("Relájate amig@, te ayudaremos a comprender los aspectos básicos de este lenguaje de programación")
+        print()
+        print("Bueno,la función de enteros y decimales en Python se denotan como int y float respectivamente ")
+        print("Una vez que comprendiste esto, entonces...")
+        print()
+        problemavariables1()
+
+
+def problemaif1():
+    print("Si quisieramos hacer un código que nos indique si una variable es mayor o menor que 100, ¿qué tipo de funcion predeterminada deberíamos usar?")
+    print("Escoge entre: if, for, while")
+    respuesta=input()
+
+    if respuesta == "if":
+        print("¡Correcto!")
+        print()
+    else:
+        print("No, pero casi. Te daré una pista: el programa que deseas hacer se basa en una condición...")
+        print("Entonces...")
+        print()
+        problemaif1()
+
+def problemaif2():
+    print("¿Cuántas funciones de else se pueden ejecutar como máximo en una misma instrucción? ")
+    print("Escoge entre: 0, 1, 2 o 3")
+    respuesta=input()
+    if respuesta=="1":
+        print("¡Correcto!")
+        print("")
+    else:
+        print("No, pero estas cerca. Ten en cuenta que else se aplica solo cuando ninguna condición se ha cumplido...")
+        print("Entonces...")
+        print()
+        problemaif2()
+
+def problemaif3():
+    print("¿Si quisiera usar más de una condición en un programa que función utilizamos:")
+    print("Escoge entre: if, elif, else o no existe")
+    respuesta=input()
+    if respuesta=="elif":
+        print("Correcto")
+    else:
+        print("Incorrecto. Una pista: la función se denota a una fusión de las variables if y else... ")
+        print("Entonces...")
+        print()
+        problemaif3()
+
+def problemawhilefor1():
+    print("¿Cuál de las siguientes estructuras es una repetitiva?:")
+    print("Escoger entre: if, str, while y print")
+    respuesta=input()
+    if respuesta=="while":
+        print("¡Muy bien!")
+        print()
+    else:
+        print("No le atinaste. Ten en cuenta que una estructura repetitiva debe obedecer cierta condición.")
+        print("Mientras esa condición se cumpla las funciones dentro de estas estructuras repetitivas correrán.")
+        print("¡Ahora inténtalo de nuevo!")
+        print()
+        problemawhilefor1()
+
+def problemawhilefor2():
+    print("x=int(input())")
+    print("k=1")
+    print("while k<x:")
+    print("     print('Hola mundo')")
+    print("     k+1")
+    print("Si se ingresa 4 como valor de x")
+    print()
+    print("¿El programa imprimirá 4 veces 'Hola mundo'?")
+    print("¿Qué crees? si o no")
+    respuesta=input()
+    if respuesta=="no":
+        print("¡Correcto!")
+    else:
+        print("Incorrecto, te recomiendo que revises tu condición; específicamente tu signo, para que se imprima 4, el símbolo debería ser menor o menor igual.")
+        print("Entonces...")
+        print()
+        problemawhilefor2()
+
+def problemawhilefor3():
+    print("A continuación verás un código en Python.")
+    print()
+    print("for i in range (1,10,2)")
+    print("     print(i)")
+    print()
+    print("¿El print del programa mostrará '2, 4, 6, 8, 10' ?")
+    print("Escoge entre: si o no ")
+    respuesta=input()
+    if respuesta=="no":
+        print("¡Correcto!")
+    else:
+        print("Incorrecto. Recuerda que el primer número dentro del rango representa el inicio, el segundo representa el final y el tercero representa el intervalo entre esos números")
+        print("Sabiendo esto, entonces..")
+        print("")
+        problemawhilefor3()
+
+def problemafunciones1():
+    print("¿Sabes que estrucctura en python nos permite juntar una secuencia de código para agilizar el proceso de codificación? ")
+    print("Escoger entre: repetitivas, variables, funciones,")
+    respuesta=input()
+    if respuesta=="funciones":
+        print("¡Respuesta correcta!")
+    else:
+        print("Casi, pero no. Míralo como si te pidieran que empaquetes un código para que desarrolle un tarea en específico.")
+        print("Con esa ayuda, entonces...")
+        print()
+        problemafunciones1()
+
+
+def problemastring1():
+    print("Ya hemos aprendido la diferencia entre un int y un float, pero ¿Sabías que hay más de un tipo de datos?")
+    respuesta=input()
+    if respuesta=="si":
+        print("¡Que bien! Introduce uno de los tipos de datos que conoces:")
+        respuesta2=input()
+        if respuesta2=="bool y string" or "bool" or "string" or "string y bool":
+            print("¡Wow, programas como el tío Bill!")
+        else:
+            print("No te preocupes, te ayudaremos con ello.")
+            print("Presiona Enter")
+            enter=input()
+            print("En la programación se usa bool para cuando se quiere determinar si una variable es true o false (verdadero o falso)")
+            print("Interesante ¿verdad?")
+    else:
+        print("No te preocupes, te ayudaremos con ello.")
+        print("Presiona Enter")
+        enter=input()
+        print("En la programación se usa bool para cuando se quiere determinar si una variable es True (verdadero) o False (falso)")
+        print("Interesante ¿verdad?")
+
+def problemastring2():
+
+    print("¿Estás familiarizado con lo que es un emoji?")
+    respuesta3=input()
+    if respuesta3=="si":
+        print("¡Estupendo!")
+        print("¡¿Sabías que estos emojis se encuentran compuestos por caracteres?!")
+        print()
+    else:
+        print("Los emojis se encuentra en todas las redes sociales y están compuestos por caracteres, ¡y tú puedes tipearlos!.")
+        print()
+    print("En la programación los caracteres se denotan bajo el tipo de datos str que vienen de string que significa una cadena de caracteres ya sean palabras o numeros")
+    print()
+
+#MAIN
+
+print("Hola ¿Cuál es tu nombre?")
+nombre=input()
+print("Bienvenido "+nombre)
+print("En la siguiente guía resolveremos algunas preguntas acerca de programación")
+
+print("¿Quieres empezar? si o no ")
+quieresempezar=input()
+if quieresempezar=="si" or "Si":
+    print("¡Perfecto! Empecemos")
+else:
+    print("¿Seguro?")
+print()
+
+
+
+print("A continuación resolveremos unas preguntas acerca de variables y sus usos en la programación:")
+print("¿Listo? ")
+noimportaloquerespondanolegohastaaquiporgusto=input()
+print()
+problemavariables1()
+print()
+
+import time
+print("Ya debes saber lo que es tipo de datos en Python")
+print("¡Practiquemos con el juego del ahorcado! Se te dara una situación y tu debes poner tu respuesta")
+print("Debes poner que clase de variable debes usar: integer (int), float (float), boolean (bool) o string (str).")
+print("Como respuesta escribir lo que se encuentra entre paréntesis.")
+time.sleep(2)
+palabra1 = "float"
+palabraingresada1 = ""
+vidas = 3
+
+print("Si se quiere digitalizar el valor de pi en Python, ¿cuál es la variable a emplear?")
+while vidas > 0:
+ fallas = 0
+ for letra in palabra1:
+   if letra in palabraingresada1:
+     print(letra,end="")
+   else:
+     print("*", end="")
+     fallas+=1
+ if fallas==0:
+     print("¡Felicidades! ¡Has aprendido lo básico para programar en Python!")
+     print("Ahora continuemos con el siguiente tema")
+     break
+ tuletra=str(input("Introduce una letra: "))
+ palabraingresada1+=tuletra
+
+ if tuletra not in palabra1:
+     vidas-=1
+     print("¡No!, sigue intentando ;)")
+     print("Te quedan ", +vidas," vidas.")
+     if vidas==0:
+        print("Lo siento amigo, no lograste lo esperado. ¡Sigue adelante!")
+else:
+    print("Continuemos con lo aprendido en Python")
+
+
+
+print()
+print("a continuación resolveremos unas preguntas acerca de if y sus usos:")
+print("¿Listo? ")
+noimportaloquerespondanolegohastaaquiporgusto=input()
+print()
+problemaif1()
+problemaif2()
+problemaif3()
+print()
+
+
+print("Ahora responderesmos algunas preguntas acerca de while y for: ")
+print("¿Listo? ")
+noimportaloquerespondanolegohastaaquiporgusto=input()
+print()
+problemawhilefor1()
+print("Las estructuras repetitivas más conocidas son while y for; ambas funcionan si se cumplen sus condiciones.")
+print()
+print("La función while puede ser usada para muchos fines; en este caso la veremos funcionando con un contador")
+print()
+print("El contador trabajará con la condición de tu while para repetir[ ] cuantas veces el valor de tu contador")
+print("cumplirá con la condición. Puede ser un poco confuso, lo sé, pero pronto se te hará todo más fácil.")
+print()
+problemawhilefor2()
+print()
+
+
+
+print("A continuación veremos unas preguntas acerca de funciones")
+print("¿Listo? ")
+noimportaloquerespondanolegohastaaquiporgusto=input()
+print()
+problemafunciones1()
+print()
+
+
+print("Ahora vermos algo de teoría de strings con una para de preguntas que te ayudaran a entender.")
+problemastring1()
+print()
+problemastring2()
+
+print("Y Con esto finalizamos el mini cuerso de proramación básica en Python")
+print("------------------------------------------------------------------------------------")
+print("Participación de:")
+print("-Figo García")
+print("-Daniel Espinoza")
+print("-Angel Gonzalez")
+print()
+print()
+print("Gracias por participar...")
